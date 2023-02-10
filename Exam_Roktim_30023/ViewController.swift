@@ -91,8 +91,8 @@ extension ViewController : UITableViewDataSource
                 self!.selectedIndexPath = indexPath
                 self!.performSegue(withIdentifier: "segueway2", sender: nil)
                
-                Expense.expenses.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .bottom)
+               // Expense.expenses.remove(at: indexPath.row)
+              //  tableView.deleteRows(at: [indexPath], with: .bottom)
                
             }
             guard let self = self else {return}
